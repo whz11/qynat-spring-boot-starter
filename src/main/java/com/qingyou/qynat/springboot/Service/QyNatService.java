@@ -41,7 +41,7 @@ public class QyNatService {
         try {
             new QyNatClient().connect(serverAddress, serverPort, remotePort, token,
                     proxyAddress, proxyPort, QyNatClientHandler.class);
-            log.info("Started QyNatClient success at:{}:{}", serverAddress, remotePort);
+            log.info("Started QyNatClient success mapping at:http://{}:{}", serverAddress, remotePort);
         } catch (IOException | InterruptedException e) {
             log.error(e.getMessage());
         }
