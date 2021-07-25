@@ -126,9 +126,7 @@ Register to qynat
 
 ## Contributing
 
-Feel free to dive in! [Open an issue](https://github.com/RichardLitt/standard-readme/issues/new) or submit PRs.
-
-Standard Readme follows the [Contributor Covenant](http://contributor-covenant.org/version/1/3/0/) Code of Conduct.
+Feel free to dive in! [Open an issue](https://github.com/whz11/qynat-springboot-starter/issues/new) or submit PRs.
 
 
 
