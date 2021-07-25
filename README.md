@@ -6,7 +6,7 @@
 
 protocol协议：[protobuf](https://developers.google.cn/protocol-buffers?hl=zh-cn)
 
-只需少量在`application.properties`中配置少量信息，实现零代码侵入的web项目内网穿透
+只需在`application.properties`中配置少量信息，实现零代码侵入的web项目内网穿透
 
 
 
