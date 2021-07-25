@@ -21,7 +21,9 @@ public class QyNatAutoConfigure {
     @Bean
     @ConditionalOnMissingBean(QyNatService.class)
     QyNatService qyNatService() {
-        return new QyNatService(properties.getServerAddress(), properties.getServerPort(), properties.getToken(),
+        QyNatService qyNatService = new QyNatService(properties.getServerAddress(), properties.getServerPort(), properties.getToken(),
                 properties.getRemotePort(), properties.getProxyAddress(), properties.getProxyPort());
+        qyNatService.connect();
+        return qyNatService;
     }
 }

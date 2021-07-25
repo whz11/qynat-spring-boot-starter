@@ -28,13 +28,12 @@ public class QyNatService {
                         String remotePort,
                         String proxyAddress,
                         String proxyPort) {
-        this.serverAddress = Objects.requireNonNull(serverAddress, "must not be null");
-        this.serverPort = Objects.requireNonNull(serverPort, "must not be null");
-        this.remotePort = Objects.requireNonNull(remotePort, "must not be null");
+        this.serverAddress = Objects.requireNonNull(serverAddress, "serverAddress must not be null");
+        this.serverPort = Objects.requireNonNull(serverPort, "serverPort must not be null");
+        this.remotePort = Objects.requireNonNull(remotePort, "remotePort must not be null");
         this.token = token;
         this.proxyAddress = proxyAddress == null ? "localhost" : proxyAddress;
         this.proxyPort = proxyPort == null ? "8080" : proxyPort;
-        connect();
     }
 
     public void connect() {
