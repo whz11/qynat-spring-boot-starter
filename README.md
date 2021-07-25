@@ -8,6 +8,8 @@ protocol协议：[protobuf](https://developers.google.cn/protocol-buffers?hl=zh-
 
 只需在`application.properties`中配置少量信息，实现零代码侵入的web项目内网穿透
 
+项目的server端在另一个多模块项目中，包括client端的命令行版、GUI版，还没写好readme暂时先不贴链接
+
 
 
 ## Table of Contents
