@@ -1,0 +1,46 @@
+// [头部声明]
+syntax = "proto3";
+
+// 声明使用的protobuf协议的版本，如果不声明，默认是proto2
+
+// [Java选项配置]
+option java_package = "com.qingyou.qynat.commom.protocol";
+
+// 生成的Java代码所在的包名
+option java_outer_classname = "NatProto";
+
+// 生成的Java代码的类名
+
+// [消息定义，每个消息结构体就会生成一个对应的Java POJO类]
+// [生成的POJO类都会作为内部类，然后封装到外部类中，外部类就是上面声明的那个类]
+
+message NatMessage {
+    uint32 id = 1; // ID
+    map<string, string> meta_data = 2;
+    Type type = 3;
+    bytes data = 4;
+}
+enum Type {
+    TYPE_NULL = 0;
+    REGISTER = 1;
+    /**
+     * 注册
+     */
+    REGISTER_RESULT = 2;
+    /**
+     * 注册
+     */
+    CONNECTED = 3;
+    /**
+     * 注册
+     */
+    DISCONNECTED = 4;
+    /**
+     * 注册
+     */
+    DATA = 5;
+    /**
+     * 注册
+     */
+    KEEPALIVE = 6;
+}
