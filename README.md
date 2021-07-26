@@ -1,7 +1,9 @@
 # qynat-springboot-starter
 
-[![standard-readme compliant](https://img.shields.io/static/v1?label=qynat&message=springboot&color=important)](https://github.com/whz11/qynat-springboot-starter/)
-[![standard-readme compliant](https://img.shields.io/static/v1?label=license&message=MIT&color=informational)](https://github.com/whz11/qynat-springboot-starter/blob/master/LICENSE)
+[![](https://img.shields.io/static/v1?label=qynat&message=springboot&color=important)](https://github.com/whz11/qynat-springboot-starter/)
+[![](https://img.shields.io/static/v1?label=license&message=MIT&color=informational)](https://github.com/whz11/qynat-springboot-starter/blob/master/LICENSE)
+[![](https://jitpack.io/v/whz11/qynat-springboot-starter.svg)](https://jitpack.io/#whz11/qynat-springboot-starter)
+ 
 
 基于netty的内网穿透工具在springboot中的整合
 
@@ -41,7 +43,6 @@ QyNat server started on port xxxx
 
 #### 引入依赖
 
-  [![](https://jitpack.io/v/whz11/qynat-springboot-starter.svg)](https://jitpack.io/#whz11/qynat-springboot-starter)
 
 * maven项目在pom中引入
 
