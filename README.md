@@ -1,6 +1,7 @@
 # qynat-springboot-starter
 
 [![](https://img.shields.io/static/v1?label=qynat&message=springboot&color=important)](https://github.com/whz11/qynat-springboot-starter/)
+[![](https://img.shields.io/static/v1?label=protocol&message=protobuf&color=ff69b4)](https://developers.google.cn/protocol-buffers?hl=zh-cn)
 [![](https://img.shields.io/static/v1?label=license&message=MIT&color=informational)](https://github.com/whz11/qynat-springboot-starter/blob/master/LICENSE)
 [![](https://jitpack.io/v/whz11/qynat-springboot-starter.svg)](https://jitpack.io/#whz11/qynat-springboot-starter)
  
