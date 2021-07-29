@@ -88,9 +88,9 @@ qynat.server-address=xxx.xxx.xxx.xxx
 qynat.server-port=7777
 ##server端配置令牌（可空）
 qynat.token=123456
-##本机地址
+##本机地址（不填自动获取ip地址）
 qynat.proxy-address=localhost
-##本机端口
+##本机端口（不填自动默认采用项目的server.port）
 qynat.proxy-port=8080
 ##映射端口
 qynat.remote-port=8080
