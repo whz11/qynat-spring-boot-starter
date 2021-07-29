@@ -119,6 +119,7 @@ public class QyNatClientHandler extends QyNatCommonHandler {
             metaData.put("channelId", natMessage.getMetaDataMap().get("channelId"));
             NatProto.NatMessage message = NatProtoCodec.createNatMessage(0, NatProto.Type.DISCONNECTED, metaData, null);
             ctx.writeAndFlush(message);
+            ctx.close();
             channelHandlerMap.remove(natMessage.getMetaDataMap().get("channelId"));
             throw e;
         }

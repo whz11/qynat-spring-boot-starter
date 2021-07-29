@@ -2,8 +2,12 @@ package com.qingyou.qynat.springboot.Service;
 
 import com.qingyou.qynat.client.client.QyNatClient;
 import com.qingyou.qynat.client.handler.QyNatClientHandler;
+import com.qingyou.qynat.commom.util.NetworkUtil;
+import com.qingyou.qynat.commom.util.StringUtil;
+import com.qingyou.qynat.springboot.property.QyNatServiceProperties;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Value;
 
 import java.io.IOException;
 import java.util.Objects;
@@ -22,18 +26,13 @@ public class QyNatService {
     private final String proxyAddress;
     private final String proxyPort;
 
-    public QyNatService(String serverAddress,
-                        String serverPort,
-                        String token,
-                        String remotePort,
-                        String proxyAddress,
-                        String proxyPort) {
-        this.serverAddress = Objects.requireNonNull(serverAddress, "serverAddress must not be null");
-        this.serverPort = Objects.requireNonNull(serverPort, "serverPort must not be null");
-        this.remotePort = Objects.requireNonNull(remotePort, "remotePort must not be null");
-        this.token = token;
-        this.proxyAddress = proxyAddress == null ? "localhost" : proxyAddress;
-        this.proxyPort = proxyPort == null ? "8080" : proxyPort;
+    public QyNatService(QyNatServiceProperties properties) {
+        this.serverAddress = Objects.requireNonNull(properties.getServerAddress(), "serverAddress must not be null");
+        this.serverPort = Objects.requireNonNull(properties.getServerPort(), "serverPort must not be null");
+        this.remotePort = Objects.requireNonNull(properties.getRemotePort(), "remotePort must not be null");
+        this.token = properties.getToken();
+        this.proxyAddress = properties.getProxyAddress() == null ? NetworkUtil.getCurrentIp() : properties.getProxyAddress();
+        this.proxyPort = properties.getProxyPort();
     }
 
     public void connect() {
@@ -45,4 +44,5 @@ public class QyNatService {
             log.error(e.getMessage());
         }
     }
+
 }

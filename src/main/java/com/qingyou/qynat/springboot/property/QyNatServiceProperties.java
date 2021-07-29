@@ -1,5 +1,6 @@
 package com.qingyou.qynat.springboot.property;
 
+import com.qingyou.qynat.commom.util.StringUtil;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
 /**
@@ -17,27 +18,27 @@ public class QyNatServiceProperties {
 
 
     public String getToken() {
-        return token;
+        return StringUtil.checkEmpty(token);
     }
 
     public String getProxyAddress() {
-        return proxyAddress;
+        return StringUtil.checkEmpty(proxyAddress);
     }
 
     public String getProxyPort() {
-        return proxyPort;
+        return StringUtil.checkEmpty(proxyPort);
     }
 
     public String getRemotePort() {
-        return remotePort;
+        return StringUtil.checkEmpty(remotePort);
     }
 
     public String getServerAddress() {
-        return serverAddress;
+        return StringUtil.checkEmpty(serverAddress);
     }
 
     public String getServerPort() {
-        return serverPort;
+        return StringUtil.checkEmpty(serverPort);
     }
 
     public void setToken(String token) {
