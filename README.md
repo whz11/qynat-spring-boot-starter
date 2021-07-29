@@ -1,9 +1,9 @@
 # qynat-springboot-starter
 
-[![](https://img.shields.io/static/v1?label=qynat&message=springboot&color=important)](https://github.com/whz11/qynat-springboot-starter/)
+[![](https://img.shields.io/static/v1?label=qynat&message=springboot&color=important)](https://github.com/whz11/qynat-spring-boot-starter/)
 [![](https://img.shields.io/static/v1?label=protocol&message=protobuf&color=ff69b4)](https://developers.google.cn/protocol-buffers?hl=zh-cn)
-[![](https://img.shields.io/static/v1?label=license&message=MIT&color=informational)](https://github.com/whz11/qynat-springboot-starter/blob/master/LICENSE)
-[![](https://jitpack.io/v/whz11/qynat-springboot-starter.svg)](https://jitpack.io/#whz11/qynat-springboot-starter)
+[![](https://img.shields.io/static/v1?label=license&message=MIT&color=informational)](https://github.com/whz11/qynat-spring-boot-starter/blob/master/LICENSE)
+[![](https://jitpack.io/v/whz11/qynat-spring-boot-starter.svg)](https://jitpack.io/#whz11/qynat-spring-boot-starter)
  
 
 基于netty的内网穿透工具在springboot中的整合
@@ -18,9 +18,9 @@ protocol协议：[protobuf](https://developers.google.cn/protocol-buffers?hl=zh-
 
 ## Table of Contents
 
-- [QuickStart](https://github.com/whz11/qynat-springboot-starter/blob/master/README.md#QuickStart)
-- [Maintainers](https://github.com/whz11/qynat-springboot-starter/blob/master/README.md#maintainers)
-- [License](https://github.com/whz11/qynat-springboot-starter/blob/master/README.md#license)
+- [QuickStart](https://github.com/whz11/qynat-spring-boot-starter/blob/master/README.md#QuickStart)
+- [Maintainers](https://github.com/whz11/qynat-spring-boot-starter/blob/master/README.md#maintainers)
+- [License](https://github.com/whz11/qynat-spring-boot-starter/blob/master/README.md#license)
 
 
 
@@ -51,7 +51,7 @@ QyNat server started on port xxxx
     <dependencies>      
         <dependency>
             <groupId>com.github.whz11</groupId>
-            <artifactId>qynat-springboot-starter</artifactId>
+            <artifactId>qynat-spring-boot-starter</artifactId>
             <version>Tag</version><!--见上方jitpack后面的版本-->
         </dependency>
     </dependencies>
@@ -69,7 +69,7 @@ QyNat server started on port xxxx
 
 ```properties
 	dependencies {
-	        implementation 'com.github.whz11:qynat-springboot-starter:Tag'
+	        implementation 'com.github.whz11:qynat-spring-boot-starter:Tag'
 	}
 	allprojects {
 		repositories {
@@ -131,7 +131,7 @@ Register to qynat
 
 ## Contributing
 
-Feel free to dive in! [Open an issue](https://github.com/whz11/qynat-springboot-starter/issues/new) or submit PRs.
+Feel free to dive in! [Open an issue](https://github.com/whz11/qynat-spring-boot-starter/issues/new) or submit PRs.
 
 
 
